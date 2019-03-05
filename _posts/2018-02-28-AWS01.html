@@ -1,9 +1,0 @@
----
-layout: post
-title:  "AWS Summary"
-subtitle: "AWS Summary#01"
-date:   2018-02-28 10:45:13 -0800
-background: '/img/posts/06.jpg'
----
-
-<span class="name">Day3 (2018-06-01)</span><ul><li><span class="name">S3</span><ul><li><span class="name">고성능을 원할 경우 prefix를 랜덤하게(16진수 해시 접두사) 부여한다.</span></li><li><span class="name">랜덤키로 검색이 어렵기 때문에, 보조 인덱스를 유지한다. (보조인덱스는 DDB 등에 저장)</span></li></ul></li><li><span class="name">CloudFront</span><ul><li><span class="name">TTL : Time To Live</span></li><li><span class="name">edge location. cache. 정적데이터를 캐쉬에 넣고 이용. 동적데이터는 TTL=0</span></li><li><span class="name">동적/정적 을 CF에서 관리하면 관리point도 줄고, CF의 네트워크망을 사용가능</span></li></ul></li><li><span class="name">DDB</span><ul><li><span class="name">3개 AZ, 3개 복사본 저장</span></li><li><span class="name">파티션 키를 분산되게끔 Random 하게 지정해야 한다.</span></li></ul></li><li><span class="name">Aurora</span><ul><li><span class="name">3개 AZ, 6개 복사본 저장</span></li></ul></li><li><span class="name">Well-Architected F/W</span><ul><li><span class="name">아키텍쳐 점검용</span></li><li><span class="name">운영 우수성, 보안, 안정성, 성능 효율성, 비용 최적화</span></li><li><span class="name">Trust Advisor</span></li></ul></li></ul>
